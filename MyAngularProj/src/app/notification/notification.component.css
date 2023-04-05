@@ -1,0 +1,19 @@
+.notification{
+    margin : 0 10px;
+}
+
+.copyright{
+     text-align: center;
+     font-style: helvetica;
+}
+
+.close{
+    float:right;
+    margin-top:5px;
+}
+
+.fadeout {
+    visibility: hidden;
+    transition: visibility 0s 2s, opacity 2s linear;
+    opacity: 0;
+}

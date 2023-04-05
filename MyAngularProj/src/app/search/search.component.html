@@ -1,0 +1,6 @@
+<div class="search" [ngClass]="{changeBackgroundColor : searchValue }">
+  <span><b>Search :</b></span>
+  <!--<input type="text" (input)="getSearchvalue($event)">-->
+  <input type="text" [(ngModel)]="searchValue">
+  <span *ngIf="searchValue" class="searchValue">Search value = {{ searchValue }}</span>
+</div>
