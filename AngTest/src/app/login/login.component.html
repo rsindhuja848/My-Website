@@ -1,0 +1,22 @@
+<div class="login-container">
+  <div class="login-content">
+    <mat-toolbar class="login-toolbar" color="primary">My App</mat-toolbar>
+    <mat-card>
+      {{myObs | async | json }} }}
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <div>
+          <mat-icon>person_outline</mat-icon>
+          <input autofocus type="text" matInput placeholder="Username" formControlName="username">
+        </div>
+
+        <div>
+          <mat-icon>lock_outline</mat-icon>
+          <input type="password" autocomplete="false" matInput placeholder="Password" formControlName="password">
+        </div>
+        <button (click)="setDefault()">Set Default</button>
+        <button type="submit" mat-raised-button color="primary">Login</button>
+      </form>
+    </mat-card>
+  </div>
+</div>
